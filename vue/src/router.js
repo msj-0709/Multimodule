@@ -6,7 +6,7 @@ import Map from "./components/MainMap";
 
 Vue.use(VueRouter);
 
-
+//msj repository 확인
 //commit 확인
 //VueRouter 클래스 함수로 라우터 객체를 생성한다.
 //routes는 경로와 컴포넌트로 이루어진 컬렉션이다. 이 맵을 보고 라우터가 경로에 따라 , 그에 맞는 컴포넌트를 렌더링 한다.
