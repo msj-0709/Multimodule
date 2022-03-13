@@ -1,13 +1,17 @@
 import Vue from 'vue'
+import axios from "axios";
 import App from './App.vue' //app.vue import
 import router from './router'
-
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css'
 
 import {
   BootstrapVue,
   IconsPlugin
 } from 'bootstrap-vue'
 
+Vue.prototype.$http = axios
+Vue.use(Vuetify);
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
