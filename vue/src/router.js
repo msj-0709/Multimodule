@@ -2,8 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "./views/Home";
 import About from "./views/About";
+import axios from "axios";
 import Map from "./components/MainMap";
 
+Vue.prototype.$http = axios;
 Vue.use(VueRouter);
 
 //msj repository 확인
@@ -17,7 +19,7 @@ const router = new VueRouter({
       component: Home
     },
     {
-      path: "/about",
+      path: "/api/about",
       component: About
     },
       {
